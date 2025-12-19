@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Restaurant System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Restaurant Order Management System</h1>
+        <p>Powered by C++ Data Structures (Queue for Orders, Map for Menu/Prep Times).</p>
+    </header>
+
+    <main>
+        <section id="menu-section">
+            <h2>🍽️ Our Menu</h2>
+            <div id="menu-list">
+                <p>Loading menu...</p> 
+            </div>
+            <div id="waiting-time-display">
+                Current Waiting Time: <span id="waiting-time">0</span> minutes (Approx.)
+            </div>
+        </section>
+
+        <section id="order-section">
+            <h2>📝 Place Your Order</h2>
+            <form id="order-form">
+                
+                <label for="customer-name">Your Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required>
+                
+                <label for="dish-selection">Select Dishes (e.g., 1, 3):</label>
+                <input type="text" id="dish-selection" name="dish-selection" 
+                       placeholder="Enter comma-separated dish numbers (e.g., 1, 3)" required>
+                
+                <button type="submit">Confirm Order</button>
+
+            </form>
+            <div id="order-status" style="margin-top: 20px; font-weight: bold;"></div>
+        </section>
+        
+        <section id="feedback-section" style="margin-top: 40px;">
+            <h2>⭐ Customer Feedback</h2>
+            <div id="feedback-list">No recent feedback collected.</div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
